@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding {
+        enable=true
+    }
 }
 
 dependencies {
@@ -54,6 +58,10 @@ dependencies {
 
     implementation ("androidx.work:work-runtime-ktx:2.7.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+        implementation ("org.greenrobot:eventbus:3.3.1")
+
+
 
 }
