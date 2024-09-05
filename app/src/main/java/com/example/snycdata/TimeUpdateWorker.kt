@@ -40,7 +40,7 @@ class TimeUpdateWorker(context: Context, workerParams: WorkerParameters) : Worke
         handler.post {
             // Append the new time to the existing content of the TextView
             val currentText = MainActivity.textView?.text.toString()
-            val updatedText = "$currentText\nCurrent Time: $currentTime"
+            val updatedText = "$currentText\n $currentTime"
 
             // Update the TextView with the previous and new times
             MainActivity.textView?.text = updatedText
